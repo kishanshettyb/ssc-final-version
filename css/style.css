@@ -1,0 +1,295 @@
+.border {
+  border: 1px solid #ddd;
+}
+
+.v-line {
+  /* margin: 0.15em 0.75em 0 0; */
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  font-weight: 900;
+  font-size: 20px;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.small-input {
+  height: calc(1.5em + 0.1rem + 1px) !important;
+  font-weight: 500;
+  color: #000;
+}
+
+.hide {
+  display: none;
+}
+
+.small-label {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.text-small {
+  font-size: 10px;
+}
+
+.bg-grey {
+  background-color: #dddddd61 !important;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.address {
+  padding: 1px 5px;
+}
+
+.address_line {
+  line-height: 1.08;
+  font-weight: 500;
+  color: #000;
+  font-size: 14px;
+}
+
+/* colors */
+.color-pink {
+  color: #f75676;
+}
+
+.color-dark {
+  color: #3c4d69;
+}
+
+/* borders */
+.bl {
+  border-left: 1px solid #ddd;
+}
+
+.br {
+  border-right: 1px solid #ddd;
+}
+
+.bt {
+  border-top: 1px solid #ddd;
+}
+
+.bb {
+  border-bottom: 1px solid #ddd;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.bg-grey-light {
+  background-color: #dddddd17;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.select2-container .select2-selection--multiple {
+  min-height: 11px;
+  height: 26px;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: 1px solid #ced4da;
+}
+
+.select2-container--default .select2-selection--multiple {
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  cursor: text;
+}
+
+.dropdownInput {
+  height: calc(1.5em + 0.1rem + 1px) !important;
+  padding: 0 0 0 10px;
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  width: 95%;
+  font-weight: 500;
+  color: #000;
+}
+
+.consignor_dropdown {
+  display: none;
+}
+
+.consignee_dropdown {
+  display: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: absolute;
+  width: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 64px;
+  top: 122px;
+  z-index: 11;
+  display: none;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 32px 32px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2793e6;
+  margin: -3px 0 0 -3px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.printSection {
+  display: none;
+}
+
+#consignee_name_add,
+#consignor_name_add {
+  text-transform: uppercase;
+}
+
+label {
+  color: #000;
+  font-weight: 500;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  /* color: #444; */
+  /* line-height: 28px; */
+  height: calc(1.5em + 0.1rem + 1px) !important;
+  font-weight: 500;
+  color: #000;
+}
+
+#policy {
+  text-transform: uppercase !important;
+}
+
+.select2-container {
+  text-transform: uppercase;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 12px;
+}
+
+.form-control {
+  border: 1px solid #000000a1;
+
+}
+
+section {
+  border: 2px solid #000000a1;
+}

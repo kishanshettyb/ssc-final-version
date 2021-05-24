@@ -1,0 +1,302 @@
+.logo-img {
+  height: 80px;
+}
+
+.billing-logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
+.branch-text {
+  color: #fff;
+}
+
+.modal-header {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.modal-footer {
+  border-top: 1px solid #e9ecef;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.62);
+  font-weight: 600;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: rgb(0, 0, 0);
+}
+
+.form-control {
+  color: #000;
+}
+
+.error {
+  font-size: 13px;
+  color: red;
+}
+
+.custom_small_btn {
+  position: absolute;
+  left: 0;
+  top: 32px;
+  margin-left: -5px;
+}
+
+/* datatable */
+#adminTable_filter label,
+#bookingTable_filter label,
+#branchesTable_filter label,
+#customersTable_filter label {
+  padding-right: 20px;
+}
+
+#adminTable_paginate,
+#bookingTable_paginate,
+#branchesTable_paginate,
+#customersTable_paginate {
+  padding: 20px;
+  margin-top: -30px;
+}
+
+#adminTable_length,
+#bookingTable_length,
+#branchesTable_length,
+#customersTable_length {
+  position: absolute;
+  padding: 0 20px;
+}
+
+#adminTable_info,
+#bookingTable_info,
+#branchesTable_info,
+#customersTable_info {
+  padding: 0 20px;
+}
+
+.dt-buttons {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dt-buttons span {
+  font-size: 11px;
+}
+
+.datatable-card-header {
+  margin-bottom: 23px;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.admin-login-btn {
+  background-color: #fff;
+  color: #000;
+}
+
+.inline-block span {
+  display: inline-block !important;
+}
+
+.upload-photo-preview {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 0 3rem rgba(136, 152, 170, .175) !important;
+}
+
+@media (min-width: 992px) {
+  .modal-large {
+    max-width: calc(100% - 100px) !important;
+  }
+}
+
+
+
+@media screen {
+  #printSection {
+    display: none;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printSection,
+  #printSection * {
+    visibility: visible;
+  }
+
+  #printSection {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.billing-logo-img {
+  height: 45px;
+  margin-top: 2px;
+}
+
+.menu-icon {
+  color: #656ee4;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 2.4;
+
+}
+
+.menu-alphabet {
+  position: absolute;
+  /* padding-top: 10px; */
+  left: 0;
+  padding-left: 25px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.btn-save-submit {
+  width: auto !important;
+}
+
+.mt-minus-5 {
+  margin-top: -5px;
+}
+
+.recievings-bill-card {
+  border: 3px solid #000;
+}
+
+.default-ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#recievings-bill-card-form input {
+  height: 25px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px !important;
+}
+
+.default-ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.recievings-bill-card .display_table input {
+  height: 25px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-radius: 0px !important;
+}
+
+.recievings-bill-card .fill_table input {
+  height: 25px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px !important;
+}
+
+.select2-container .select2-selection--single {
+  height: 27px !important;
+  /* width: calc(100% + 4px); */
+}
+
+#printThis .receivingsForm input {
+  height: 25px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px !important;
+  border-bottom: 0px !important;
+}
+
+.receivingsForm input {
+  height: 25px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px !important;
+}
+
+#search_booking .select2-container .select2-selection--single {
+
+  height: calc(2.75rem + 2px) !important;
+}
+
+#search_booking .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 42px;
+}
+
+#search_booking .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 42px;
+}
+
+.branch-div {
+  display: none;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.ml-m-25 {
+  margin-left: -25px;
+}
+
+#gc_no_input {
+  text-transform: uppercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .hide-sidebar {
+    margin-left: 60px !important;
+  }
+}
+
+.bg-body-gray {
+  background-color: #f6f7fc !important;
+  height: 100vh;
+}
+
+;

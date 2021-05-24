@@ -1,0 +1,62 @@
+.carousel-item img{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.image {
+  position:relative;
+}
+.image img {
+  width:100%;
+  vertical-align:top;
+}
+.image:after {
+  content:'\A';
+  position:absolute;
+  width:100%; height:100%;
+  top:0; left:0;
+  background:rgba(0,0,0,0.5);
+  opacity:0;
+  transition: all 0.5s;
+  opacity:1;
+  -webkit-transition: all 0.5s;
+}
+.btn-primary{
+  background-image: linear-gradient( 135deg, #f64a08 10%, #f9a606 100%);
+  border:0;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.logo-img{
+  height: 80px;
+}
+.logo-text{
+  font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+.logo-text-white{
+  font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    margin-top: -10px;
+    color: #ffffffb5;
+    margin-bottom: 0;
+}
+.bg-light{
+  background-color: #fff!important;
+}
+
+.footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #050505;
+}
+.footer-heading{
+  font-size: 20px;
+  color: #ffffffb5;
+}
+.footer .phone{
+  color:#f63e23;
+  font-weight: 600;
+  text-decoration: none;
+}
