@@ -54,7 +54,7 @@
            <!-- Navbar items -->
            <ul class="navbar-nav ml-auto">
              <li class="nav-item">
-               <a class="nav-link nav-link-icon" href="#">
+               <a class="nav-link nav-link-icon text-center" href="#">
                  <i class="fas fa-map-marker"></i>
                  <span class="nav-link-inner--text">Shop No.7. SSBM Complex, Mejestic, Banglore-9</span>
                </a>
@@ -124,13 +124,13 @@
        <div class="row align-items-center justify-content-xl-between">
          <div class="col-xl-6">
            <div class="copyright text-center text-xl-left text-muted">
-             &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Cargo</a>
+             &copy; 2021 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Cargo</a>
            </div>
          </div>
          <div class="col-xl-6">
            <ul class="nav nav-footer justify-content-center justify-content-xl-end">
              <li class="nav-item">
-               <a href="#" class="nav-link" target="_blank">GSTIN: Ap: 37AEGFS8998P1zL, Ts: 36AEGFS8998P1ZN</a>
+               <a href="#" class="nav-link" target="_blank">GSTIN: 29AKZPM2385H1ZB</a>
              </li>
            </ul>
          </div>

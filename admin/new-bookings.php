@@ -205,22 +205,22 @@ error_reporting(0);
                             <span class="pr-2" style="font-weight:600;float:left">Mobile: 
                             <?php 
                              if($_SESSION["session_branch"] == MAINBRANCH){
-                               echo "8309333628";
+                               echo "9449507037";
                               }else if($_SESSION["session_branch"] == "BANGALORE"){
                                echo "GSTIN: 9449507037";
                              }else{
-                              echo "8309333628";
+                              echo "9449507037";
                              }
                              ?>
                             </span>
                             <span class="pr-2" style="font-weight:600;float:right;font-size:12px">
                             <?php 
                              if($_SESSION["session_branch"] == MAINBRANCH){
-                               echo "GSTIN: Ap: 37AEGFS8998P1zL, Ts: 36AEGFS8998P1ZN";
+                               echo "GSTIN: 29AKZPM2385H1ZB";
                               }else if($_SESSION["session_branch"] == "BANGALORE"){
                                echo "GSTIN: 29AKZPM2385H1ZB";
                              }else{
-                              echo "GSTIN: Ap: 37AEGFS8998P1zL, Ts: 36AEGFS8998P1ZN";
+                              echo "GSTIN: 29AKZPM2385H1ZB";
                              }
                              ?>
                             </span>
@@ -548,13 +548,13 @@ error_reporting(0);
         <div class="row align-items-center justify-content-xl-between">
           <div class="col-xl-6">
             <div class="copyright text-center text-xl-left text-muted">
-              &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Cargo</a>
+              &copy; 2021 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Cargo</a>
             </div>
           </div>
           <div class="col-xl-6">
             <ul class="nav nav-footer justify-content-center justify-content-xl-end">
               <li class="nav-item">
-                <a href="#" class="nav-link" target="_blank">GSTIN: Ap: 37AEGFS8998P1zL, Ts: 36AEGFS8998P1ZN</a>
+                <a href="#" class="nav-link" target="_blank">GSTIN: 29AKZPM2385H1ZB</a>
               </li>
             </ul>
           </div>
