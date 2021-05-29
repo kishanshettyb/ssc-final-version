@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
    <meta name="author" content="Creative Tim">
-   <title>Login - Sri Sai Sri Transport</title>
+   <title>Login - Sri Sai Cargo</title>
    <!-- Favicon -->
    <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
    <!-- Fonts -->
@@ -27,7 +27,7 @@
      <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
        <div class="container px-4">
          <a class="navbar-brand" href="./index">
-           <h2 class="text-white">Sri Sai Sri Transport</h2>
+           <h2 class="text-white">Sri Sai Cargo</h2>
          </a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main"
            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
              <div class="row">
                <div class="col-6 collapse-brand">
                  <h2> <a href="./index">
-                     Sri Sai Sri Transport
+                     Sri Sai Cargo
                    </a></h2>
                </div>
                <div class="col-6 collapse-close">
@@ -56,7 +56,7 @@
              <li class="nav-item">
                <a class="nav-link nav-link-icon" href="#">
                  <i class="fas fa-map-marker"></i>
-                 <span class="nav-link-inner--text">Flat No:1, Block No:10, Road No:5, Autonagar, Hyderabad-500070.</span>
+                 <span class="nav-link-inner--text">Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station,<br> Majestic, Bangalore - 560009.</span>
                </a>
              </li>
              <li class="nav-item">
@@ -130,7 +130,7 @@
        <div class="row align-items-center justify-content-xl-between">
          <div class="col-xl-6">
            <div class="copyright text-center text-xl-left text-muted">
-             &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Sri Transport</a>
+             &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Cargo</a>
            </div>
          </div>
          <div class="col-xl-6">

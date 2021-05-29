@@ -29,7 +29,7 @@ error_reporting(0);
     }
   </style> -->
 
-  <title>Sri Sai Sri Transport</title>
+  <title>Sri Sai Cargo</title>
 </head>
 
 <body class="bg-grey print-page">
@@ -57,7 +57,7 @@ error_reporting(0);
             <!-- address -->
             <div class="row">
               <div class="col-md-8 bb address">
-                <h4 class="mb-0 color-pink text-center">Sri Sai Sri Transport </h4>
+                <h4 class="mb-0 color-pink text-center">Sri Sai Cargo </h4>
                 <hr class="mt-2 mb-2">
                 <p class="mb-1 text-justify address_line text-center" style="line-height:1">
                   <!-- Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, Bangalore - 560009.<br /> -->

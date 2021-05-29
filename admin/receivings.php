@@ -46,7 +46,7 @@ error_reporting(0);
       <!-- Brand -->
       <a class="navbar-brand pt-0 mx-auto text-center" href="./index">
         <img src="./assets/img/brand/icon-new.png" class="logo-img" alt="">
-        <h2 class="logo-text">Sri Sai Sri Transport</h2>
+        <h2 class="logo-text">Sri Sai Cargo</h2>
       </a>
       <!-- Collapse -->
       <div class="collapse navbar-collapse" id="sidenav-collapse-main">
@@ -171,7 +171,7 @@ error_reporting(0);
                                 if($_SESSION["session_branch"] == MAINBRANCH){
                                  ?>
                     <img src="./assets/img/brand/icon.png" style="height:50px;margin-top:30px" alt="">
-                    <p style="font-weight:900;font-size:10px;color:balck">SRI SAI SRI TRANSPORT</p>
+                    <p style="font-weight:900;font-size:10px;color:balck">Sri Sai Cargo</p>
 
                     <?php
                                 }else  if($_SESSION["session_branch"] == "BANGALORE"){
@@ -183,7 +183,7 @@ error_reporting(0);
                                 }else{
 ?>
                     <img src="./assets/img/brand/logo.png" style="height:50px;margin-top:30px" alt="">
-                    <p style="font-weight:900;font-size:10px;color:black">SRI SAI SRI TRANSPORT</p>
+                    <p style="font-weight:900;font-size:10px;color:black">Sri Sai Cargo</p>
 
 
                     <?php
@@ -196,7 +196,7 @@ error_reporting(0);
                                 if($_SESSION["session_branch"] == MAINBRANCH){
                                  ?>
                   <p class="mt-4 text-justify address_line text-center" style="line-height:1">
-                    Flat No:1, Block No:10, Road No:5, Autonagar, Hyderabad-500070.
+                    Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, Bangalore - 560009.
                   </p>
                   <hr class="mb-1 mt-0">
                   <p class="pb-0 text-justify address_line text-left" style="line-height:1">
@@ -224,7 +224,7 @@ error_reporting(0);
                                  
                                   ?>
                   <p class="mt-4 text-justify address_line text-center" style="line-height:1">
-                    Flat No:1, Block No:10, Road No:5, Autonagar, Hyderabad-500070.
+                    Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, Bangalore - 560009.
                   </p>
                   <hr class="mb-1 mt-0">
                   <p class="pb-0 text-justify address_line text-left" style="line-height:1">
@@ -396,7 +396,7 @@ error_reporting(0);
         <div class="row align-items-center justify-content-xl-between">
           <div class="col-xl-6">
             <div class="copyright text-center text-xl-left text-muted">
-              &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Sri Transport</a>
+              &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Cargo</a>
             </div>
           </div>
           <div class="col-xl-6">

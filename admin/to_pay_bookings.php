@@ -43,7 +43,7 @@ error_reporting(0);
       <!-- Brand -->
       <a class="navbar-brand pt-0 mx-auto text-center" href="./index">
       <img src="./assets/img/brand/icon-new.png" class="logo-img" alt="">
-        <h2 class="logo-text">Sri Sai Sri Transport</h2>
+        <h2 class="logo-text">Sri Sai Cargo</h2>
       </a>
       <!-- Collapse -->
       <div class="collapse navbar-collapse" id="sidenav-collapse-main">
@@ -165,7 +165,7 @@ error_reporting(0);
         <div class="row align-items-center justify-content-xl-between">
           <div class="col-xl-6">
             <div class="copyright text-center text-xl-left text-muted">
-              &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Sri Transport</a>
+              &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Cargo</a>
             </div>
           </div>
           <div class="col-xl-6">
