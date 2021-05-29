@@ -209,6 +209,19 @@
   border-left: 0px;
   border-right: 0px;
   border-radius: 0px !important;
+  font-size: 12px;
+}
+
+#recievings-bill-card-form ul li {
+  font-size: 12px;
+}
+
+.new-receipt .receivingsForm ul li {
+  font-size: 12px;
+}
+
+.new-receipt .receivingsForm input {
+  font-size: 12px;
 }
 
 .default-ul li {
@@ -299,4 +312,9 @@
   height: 100vh;
 }
 
-;
+.avatar img {
+  width: 100%;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+}

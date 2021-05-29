@@ -33,9 +33,12 @@ function getBookings() {
 	var branch_id = $(".branch-text").attr("data-branch-id");
 
 	var url;
-	if (branch == MAINBRANCH) {
+	if (branch == "BANGLORE") {
 		url = "../api/bookings/read.php";
 		$(".branch-div").css("display", "block");
+		setTimeout(function () {
+			$(document).find("#branches").val(branch);
+		}, 1000);
 	} else {
 		url = "../api/bookings/read_branch.php?branch_id=" + branch_id;
 		setTimeout(function () {
@@ -181,6 +184,10 @@ $("#filterForm").on("submit", function (e) {
 	}
 	if (end_date == "") {
 		end_date = "All";
+	}
+	if ((start_date == end_date) != "All") {
+		start_date = start_date + " 00:01:00.000000";
+		end_date = end_date + " 23:59:00.000000";
 	}
 	var payment_mode = $("#filterForm #payment_mode option:selected").text();
 	var branches = $("#filterForm #branches option:selected").val();

@@ -31,7 +31,7 @@ function getAdmins() {
 				data: "actions",
 				className: "action-row-large",
 				render: function (data, type, row) {
-					return '<a class="btn btn-danger btn-sm editAdmin" href="#" role="button">Edit Admin</a>';
+					return '<a class="btn btn-success btn-sm editAdmin" href="#" role="button">Edit Admin</a><a class="btn btn-danger btn-sm deleteAdmin" href="#" role="button">Delete Admin</a>';
 				},
 			},
 		],
@@ -172,6 +172,32 @@ $(document).on("click", ".createAdmin, .editAdmin", function () {
 			},
 		});
 	}
+});
+
+$(document).on("click", ".deleteAdmin", function () {
+	var url = "../api/admin/delete.php";
+	var admin_id = $(this).closest("tr").find(".admin_id").text();
+	var data = {
+		admin_id: admin_id,
+	};
+	$.ajax({
+		url: url,
+		type: "POST",
+		dataType: "json",
+		data: JSON.stringify(data),
+		contentType: "application/json; charset=utf-8",
+		success: function (data) {
+			swal({
+				title: "Success",
+				text: "admin deleted successfully.",
+				icon: "success",
+			});
+			getAdmins();
+		},
+		error: function (xhr, textStatus, errorThrown) {
+			swal("Oops...", "Something went wrong!", "error");
+		},
+	});
 });
 
 // create branch

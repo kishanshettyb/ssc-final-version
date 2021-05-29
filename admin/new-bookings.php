@@ -94,7 +94,7 @@ error_reporting(0);
               aria-expanded="false">
               <div class="media align-items-center">
                 <span class="avatar avatar-sm rounded-circle">
-                  <img alt="Image placeholder" src="./assets/img/theme/team-4-800x800.jpg">
+                  <img alt="Image placeholder" src="./assets/img/profile-image/<?php echo $_SESSION["session_admin_profile"] ?>">
                 </span>
                 <div class="media-body ml-2 d-none d-lg-block">
                   <span class="mb-0 text-sm  font-weight-bold"><?php echo $_SESSION["session_admin_username"] ?></span>
@@ -326,18 +326,18 @@ error_reporting(0);
                           <input type="text" class="form-control mt-0 small-input" id="policy" 
                           value="<?php 
                              if($_SESSION["session_branch"] == MAINBRANCH){
-                               echo "SUBJECT TO HYDERABAD JURISDICTION";
+                               echo "SUBJECT TO BANGLORE JURISDICTION";
                               }else if($_SESSION["session_branch"] == "BANGALORE"){
                                echo "SUBJECT TO BANGLORE JURISDICTION";
                              }else{
-                              echo "SUBJECT TO HYDERABAD JURISDICTION";
+                              echo "SUBJECT TO BANGLORE JURISDICTION";
                              }
                              ?>" style="font-size:13px">
                         </div>
                       </div>
 
                       <!-- Signatures & Buttons -->
-                      <div class="row pt-0 pb-0 text-center">
+                      <div class="row pt-0 pb-0 text-center signature-row">
                         <div class="col-md-4">
                           <button type="button" class="btn btn-light btn-sm">Booking Person Signature</button>
                         </div>

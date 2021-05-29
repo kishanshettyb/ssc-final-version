@@ -16,6 +16,7 @@ session_start();
       public $phone;
       public $address;
       public $branch;
+      public $profile;
       public $branch_id;
       // constructor with $db as database connection
       public function __construct($db)
@@ -61,7 +62,7 @@ session_start();
         $query = "INSERT INTO
                     " . $this->table_name . "
                 SET
-                    username=:username, password=:password, name=:name, email=:email, phone=:phone, address=:address, branch=:branch,branch_id=:branch_id";
+                    username=:username, password=:password, name=:name, email=:email, phone=:phone, address=:address, branch=:branch,profile=:profile,branch_id=:branch_id";
 
         // prepare query
         $stmt = $this->conn->prepare($query);
@@ -74,6 +75,7 @@ session_start();
         $this->phone=htmlspecialchars(strip_tags($this->phone));
         $this->address=htmlspecialchars(strip_tags($this->address));
         $this->branch=htmlspecialchars(strip_tags($this->branch));
+        $this->profile=htmlspecialchars(strip_tags($this->profile));
         $this->branch_id=htmlspecialchars(strip_tags($this->branch_id));
 
 
@@ -85,6 +87,7 @@ session_start();
         $stmt->bindParam(":phone", $this->phone);
         $stmt->bindParam(":address", $this->address);
         $stmt->bindParam(":branch", $this->branch);
+        $stmt->bindParam(":profile", $this->profile);
         $stmt->bindParam(":branch_id", $this->branch_id);
 
 
@@ -121,6 +124,7 @@ session_start();
         $this->phone = $row['phone'];
         $this->address = $row['address'];
         $this->branch = $row['branch'];
+        $this->profile = $row['profile'];
         $this->branch_id = $row['branch_id'];
 
       }
@@ -154,12 +158,14 @@ session_start();
         $this->phone = $row['phone'];
         $this->address = $row['address'];
         $this->branch = $row['branch_name'];
+        $this->profile = $row['profile'];
         $this->branch_id = $row['branch_id'];
         $this->branch_name = $row['branch_name'];
 
         $count = $stmt->rowCount();
         if ($count>0) {
           $_SESSION["session_admin_username"] = $row["username"];
+          $_SESSION["session_admin_profile"] = $row["profile"];
           $_SESSION["session_admin_id"] = $row["admin_id"];
           $_SESSION["session_branch"] = $row["branch_name"];
           $_SESSION["session_phone"] = $row["phone"];
@@ -191,6 +197,7 @@ session_start();
                       phone = :phone,
                       address = :address,
                       branch = :branch,
+                      profile = :profile,
                       branch_id = :branch_id
 
                   WHERE
@@ -207,6 +214,7 @@ session_start();
           $this->phone=htmlspecialchars(strip_tags($this->phone));
           $this->address=htmlspecialchars(strip_tags($this->address));
           $this->branch=htmlspecialchars(strip_tags($this->branch));
+          $this->profile=htmlspecialchars(strip_tags($this->profile));
           $this->branch_id=htmlspecialchars(strip_tags($this->branch_id));
 
           $this->admin_id=htmlspecialchars(strip_tags($this->admin_id));
@@ -219,6 +227,7 @@ session_start();
           $stmt->bindParam(':phone', $this->phone);
           $stmt->bindParam(':address', $this->address);
           $stmt->bindParam(':branch', $this->branch);
+          $stmt->bindParam(':profile', $this->profile);
           $stmt->bindParam(':branch_id', $this->branch_id);
 
           $stmt->bindParam(':admin_id', $this->admin_id);
@@ -230,6 +239,28 @@ session_start();
 
           return false;
       }
+
+      function delete_admin(){
+
+        // update admin_id
+        $query ="DELETE FROM " . $this->table_name . " WHERE   admin_id = :admin_id";
+
+        // prepare query statement
+        $stmt = $this->conn->prepare($query);
+
+        // sanitize
+        $this->admin_id=htmlspecialchars(strip_tags($this->admin_id));
+
+        // bind new values
+        $stmt->bindParam(':admin_id', $this->admin_id);
+
+        // execute the query
+        if($stmt->execute()){
+            return true;
+        }
+
+        return false;
+    }
   }
 
  ?>
