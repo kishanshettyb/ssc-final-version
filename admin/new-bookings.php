@@ -48,7 +48,7 @@ error_reporting(0);
       <!-- Brand -->
      <a class="navbar-brand pt-0 mx-auto text-center" href="./index">
         <img src="./assets/img/brand/icon-new.png" class="logo-img" alt="">
-        <h2 class="logo-text">Sri Sai Sri Transport</h2>
+        <h2 class="logo-text">Sri Sai Cargo</h2>
       </a>
       <!-- Collapse -->
       <div class="collapse navbar-collapse" id="sidenav-collapse-main">
@@ -171,11 +171,11 @@ error_reporting(0);
                                 <img src="./assets/img/brand/icon-new.png" class="billing-logo-img" alt="">
                                 <h2 class="billing-logo-text mb-0"><?php
                                 if($_SESSION["session_branch"] == MAINBRANCH){
-                                 echo  "Sri Sai Sri Transport";
+                                 echo  "Sri Sai Cargo";
                                 }else  if($_SESSION["session_branch"] == "BANGALORE"){
                                   echo  "Sri Sai Cargo";
                                 }else{
-                                 echo  "Sri Sai Sri Transport";
+                                 echo  "Sri Sai Cargo";
                                 }
                                 ?></h2>
                               </div>
@@ -185,11 +185,11 @@ error_reporting(0);
 
                               <?php
                               if($_SESSION["session_branch"] == MAINBRANCH){
-                                echo "Flat No:1, Block No:10, Road No:5, Autonagar, Hyderabad-500070.";
+                                echo "Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, Bangalore - 560009.";
                               }else if($_SESSION["session_branch"] == "BANGALORE"){
                                echo  "Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, Bangalore - 560009.";
                               }else {
-                                echo "Flat No:1, Block No:10, Road No:5, Autonagar, Hyderabad-500070.";
+                                echo "Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, Bangalore - 560009.";
                               }
                               ?>
                                 <!-- Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic,
@@ -205,28 +205,28 @@ error_reporting(0);
                             <span class="pr-2" style="font-weight:600;float:left">Mobile: 
                             <?php 
                              if($_SESSION["session_branch"] == MAINBRANCH){
-                               echo "8309333628";
+                               echo "9449507037";
                               }else if($_SESSION["session_branch"] == "BANGALORE"){
                                echo "GSTIN: 9449507037";
                              }else{
-                              echo "8309333628";
+                              echo "9449507037";
                              }
                              ?>
                             </span>
                             <span class="pr-2" style="font-weight:600;float:right;font-size:12px">
                             <?php 
                              if($_SESSION["session_branch"] == MAINBRANCH){
-                               echo "GSTIN: Ap: 37AEGFS8998P1zL, Ts: 36AEGFS8998P1ZN";
+                               echo "GSTIN: 29AKZPM2385H1ZB";
                               }else if($_SESSION["session_branch"] == "BANGALORE"){
                                echo "GSTIN: 29AKZPM2385H1ZB";
                              }else{
-                              echo "GSTIN: Ap: 37AEGFS8998P1zL, Ts: 36AEGFS8998P1ZN";
+                              echo "GSTIN: 29AKZPM2385H1ZB";
                              }
                              ?>
                             </span>
                         </div>
                         <!-- <div class="col-md-8 bb address">
-                          <h4 class="mb-0 color-pink text-center">Sri Sai Sri Transport </h4>
+                          <h4 class="mb-0 color-pink text-center">Sri Sai Cargo </h4>
                           <hr class="mt-2 mb-2">
                           <p class="mb-1 text-justify address_line text-center" style="line-height:1">
                             Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, Bangalore - 560009.<br />
@@ -548,13 +548,13 @@ error_reporting(0);
         <div class="row align-items-center justify-content-xl-between">
           <div class="col-xl-6">
             <div class="copyright text-center text-xl-left text-muted">
-              &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Sri Transport</a>
+              &copy; 2021 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Cargo</a>
             </div>
           </div>
           <div class="col-xl-6">
             <ul class="nav nav-footer justify-content-center justify-content-xl-end">
               <li class="nav-item">
-                <a href="#" class="nav-link" target="_blank">GSTIN: Ap: 37AEGFS8998P1zL, Ts: 36AEGFS8998P1ZN</a>
+                <a href="#" class="nav-link" target="_blank">GSTIN: 29AKZPM2385H1ZB</a>
               </li>
             </ul>
           </div>

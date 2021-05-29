@@ -4,13 +4,13 @@
   {
         // database credentials
         private $host = "localhost";
-        // private $username = "root";
-        // private $password ="";
-        // private $db_name = "skanda";
-
-        private $username = "skanda";
-        private $password ="Anjaneya!123";
+        private $username = "root";
+        private $password ="";
         private $db_name = "skanda";
+
+        // private $username = "skanda";
+        // private $password ="Anjaneya!123";
+        // private $db_name = "skanda";
 
         public $conn;
 

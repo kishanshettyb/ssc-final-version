@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
    <meta name="author" content="Creative Tim">
-   <title>Admin Login - Sri Sai Sri Transport</title>
+   <title>Admin Login - Sri Sai Cargo</title>
    <!-- Favicon -->
    <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
    <!-- Fonts -->
@@ -27,7 +27,7 @@
      <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
        <div class="container px-4">
          <a class="navbar-brand" href="./index">
-           <h2 class="text-white">Sri Sai Sri Transport</h2>
+           <h2 class="text-white">Sri Sai Cargo</h2>
          </a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main"
            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
              <div class="row">
                <div class="col-6 collapse-brand">
                  <h2> <a href="./index">
-                     Sri Sai Sri Transport
+                     Sri Sai Cargo
                    </a></h2>
                </div>
                <div class="col-6 collapse-close">
@@ -54,7 +54,7 @@
            <!-- Navbar items -->
            <ul class="navbar-nav ml-auto">
              <li class="nav-item">
-               <a class="nav-link nav-link-icon" href="#">
+               <a class="nav-link nav-link-icon text-center" href="#">
                  <i class="fas fa-map-marker"></i>
                  <span class="nav-link-inner--text">Shop No.7. SSBM Complex, Mejestic, Banglore-9</span>
                </a>
@@ -124,13 +124,13 @@
        <div class="row align-items-center justify-content-xl-between">
          <div class="col-xl-6">
            <div class="copyright text-center text-xl-left text-muted">
-             &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Sri Transport</a>
+             &copy; 2021 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Cargo</a>
            </div>
          </div>
          <div class="col-xl-6">
            <ul class="nav nav-footer justify-content-center justify-content-xl-end">
              <li class="nav-item">
-               <a href="#" class="nav-link" target="_blank">GSTIN: Ap: 37AEGFS8998P1zL, Ts: 36AEGFS8998P1ZN</a>
+               <a href="#" class="nav-link" target="_blank">GSTIN: 29AKZPM2385H1ZB</a>
              </li>
            </ul>
          </div>

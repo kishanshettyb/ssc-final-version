@@ -14,7 +14,7 @@ error_reporting(0);
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Sri Sai Sri Transport- Admin</title>
+  <title>Sri Sai Cargo- Admin</title>
   <!-- Favicon -->
   <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
   <!-- Fonts -->
@@ -42,7 +42,7 @@ error_reporting(0);
       <!-- Brand -->
       <a class="navbar-brand pt-0 mx-auto text-center" href="./index">
         <img src="./assets/img/brand/icon-new.png" class="logo-img" alt="">
-        <h2 class="logo-text">Sri Sai Sri Transport</h2>
+        <h2 class="logo-text">Sri Sai Cargo</h2>
       </a>
       <!-- User -->
       <ul class="nav align-items-center d-md-none">
@@ -293,13 +293,13 @@ error_reporting(0);
         <div class="row align-items-center justify-content-xl-between">
           <div class="col-xl-6">
             <div class="copyright text-center text-xl-left text-muted">
-              &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Sri Transport</a>
+              &copy; 2021 <a href="#" class="font-weight-bold ml-1" target="_blank">Sri Sai Cargo</a>
             </div>
           </div>
           <div class="col-xl-6">
             <ul class="nav nav-footer justify-content-center justify-content-xl-end">
               <li class="nav-item">
-                <a href="#" class="nav-link" target="_blank">GSTIN: Ap: 37AEGFS8998P1zL, Ts: 36AEGFS8998P1ZN</a>
+                <a href="#" class="nav-link" target="_blank">GSTIN: 29AKZPM2385H1ZB</a>
               </li>
             </ul>
           </div>

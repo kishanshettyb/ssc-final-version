@@ -1,12 +1,12 @@
 <?php
 $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $database = "skanda";
-
-$username = "skanda";
-$password = "Anjaneya!123";
+$username = "root";
+$password = "";
 $database = "skanda";
+
+// $username = "skanda";
+// $password = "Anjaneya!123";
+// $database = "skanda";
 
 
 // Create connection
