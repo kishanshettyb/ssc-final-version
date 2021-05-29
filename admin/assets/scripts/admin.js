@@ -143,6 +143,9 @@ $(document).on("click", ".createAdmin, .editAdmin", function () {
 	if (btn == "Create New Admin") {
 		$("#adminModal .modal-title").text("Create New Admin");
 		$("#adminForm").find("input").val("");
+		setTimeout(function () {
+			$("#adminForm").find("input[name='profile']").val("icon-new.png");
+		});
 		$("#branch_id").val(
 			$("select#branches option").filter(":selected").attr("data-branch-id")
 		);
@@ -244,6 +247,8 @@ $("#adminForm").on("submit", function (e) {
 		phone: $("#adminForm").find(".phone").val(),
 		address: $("#adminForm").find(".address").val(),
 		branch: $("#branches :selected").text(),
+		profile: $("#adminForm").find(".profile").val(),
+
 		branch_id: $("#branches :selected").attr("data-branch-id"),
 	};
 	var url, operation;
