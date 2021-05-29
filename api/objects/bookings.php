@@ -937,7 +937,7 @@
                    else if ($this->branch_name == "All"  && $this->payment_mode !== "All"  && $this->status !== "All"   && $this->start_date !== "All" && $this->end_date !== "All") {
                     $query = "SELECT  * FROM bookings 
                     INNER JOIN branches ON branches.branch_id = bookings.branch_id
-                    WHERE branch_name     LIKE '%' AND  payment_mode = ?    AND  status = ? AND date BETWEEN   ?  AND   ?   ";
+                    WHERE branch_name     LIKE '%' AND  payment_mode = ?    AND  status = ? AND date >=   ?  AND   < ?   ";
                     // prepare query statement
                     $stmt = $this->conn->prepare( $query );
          
@@ -952,6 +952,8 @@
                     $stmt->execute();
                     return $stmt;
                        }
+
+                       
 
         //       else if ($this->payment_mode !== "All" && $this->order_status == "All" && $this->start_date !== "All"  && $this->end_date !== "All") {
         //         $query = "SELECT  * FROM orders  WHERE payment_mode = ?  AND  order_status  LIKE '%'   AND created_date BETWEEN  ?  AND  ? ";

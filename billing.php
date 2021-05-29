@@ -157,7 +157,7 @@ error_reporting(0);
             </div>
 
             <!-- Signatures & Buttons -->
-            <div class="row pt-0 pb-3 text-center">
+            <div class="row pt-0 pb-3 text-center signature-row">
               <div class="col-md-4">
                 <button type="button" class="btn btn-light btn-sm">Booking Person Signature</button>
               </div>

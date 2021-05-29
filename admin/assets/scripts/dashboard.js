@@ -19,14 +19,18 @@ function getBookings() {
 				className: " admin_id hide",
 			},
 			{
-				data: "gc_no",
-				className: " gc_no  ",
-			},
-			{
 				data: "date",
 				render: function (data, type, row) {
 					return moment(data).format("DD/MM/YYYY h:mm:ss a");
 				},
+			},
+			{
+				data: "gc_no",
+				className: " gc_no  ",
+			},
+			{
+				data: "from_place",
+				className: " from_place  ",
 			},
 			{
 				data: "to_place",

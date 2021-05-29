@@ -31,6 +31,7 @@ error_reporting(0);
   <link type="text/css" href="./assets/css/argon.css?v=1.0.0" rel="stylesheet">
   <link type="text/css" href="./assets/css/custom.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/dropzone.css">
 
 </head>
 
@@ -90,7 +91,7 @@ error_reporting(0);
               aria-expanded="false">
               <div class="media align-items-center">
                 <span class="avatar avatar-sm rounded-circle">
-                  <img alt="Image placeholder" src="./assets/img/theme/team-4-800x800.jpg">
+                  <img alt="Image placeholder" src="./assets/img/profile-image/<?php echo $_SESSION["session_admin_profile"] ?>">
                 </span>
                 <div class="media-body ml-2 d-none d-lg-block">
                   <span class="mb-0 text-sm  font-weight-bold"><?php echo $_SESSION["session_admin_username"] ?></span>
@@ -116,7 +117,7 @@ error_reporting(0);
       </div>
     </nav>
     <!-- Header -->
-    <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(assets/img/theme/bg-2.png); background-size: cover; background-position:bottom;">
+    <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center profile-pic" style="min-height: 600px; background-image: url(assets/img/theme/bg-2.png); background-size: cover; background-position:bottom;">
  <!-- Mask -->
  <span class="mask bg-gradient-default opacity-8"></span>
       
@@ -273,6 +274,8 @@ error_reporting(0);
                     placeholder="Enter Admin id">
                      <input id="branch_id" name="branch_id" type="text" class="form-control "
                     placeholder="Enter Admin id">
+                                         <input id="profile" name="profile" type="text" class="form-control "
+                    placeholder=" ">
                 </div>
               </div>
               <div class="col-md-4">
@@ -299,7 +302,7 @@ error_reporting(0);
                   <label>Profile Photo</label>
                   <!-- <input id="password" name="password" type="text" class="form-control hide"
                     placeholder="Enter Password"> -->
-                    <button class="btn btn-primary"><i class="fas fa-images pr-2"></i>Upload Photo</button>
+                    <button type="button" class="btn btn-primary upload-photo"><i class="fas fa-images pr-2"></i>Upload Photo</button>
                     <img class="upload-photo-preview shadow-lg" src="assets/img/theme/team-4-800x800.jpg" alt="">
                 </div>
               </div>
@@ -345,6 +348,33 @@ error_reporting(0);
     </div>
   </div>
 
+  <div class="modal" tabindex="-1" role="dialog" id="profile-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Upload Profile Image</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div id="upload_file" class="dropzone noPadding dz-clickable" data-btn="product_images">
+                    <div class="dropzone">
+                      <div class="dz-message">
+                        <h1>
+                          <i class="fas fa-hand-point-up"></i>
+                        </h1>
+                        <h3>Drop files here or click to upload.</h3>
+                        <h5>(Upload your File.)
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <!-- Argon Scripts -->
   <!-- Core -->
@@ -356,10 +386,12 @@ error_reporting(0);
   <!-- Optional JS -->
   <script src="./assets/vendor/chart.js/dist/Chart.min.js"></script>
   <script src="./assets/vendor/chart.js/dist/Chart.extension.js"></script>
+
   <!-- Argon JS -->
   <script src="./assets/js/argon.js?v=1.0.0"></script>
   <script src="./assets/js/sweetalert.min.js"></script>
   <script src="./assets/js/jquery.validate.min.js"></script>
+  <script src="../js/dropzone.js" charset="utf-8"></script>
   <script src="./assets/scripts/util.js"></script>
   <script src="./assets/scripts/profile.js"></script>
 </body>

@@ -38,6 +38,7 @@
             "phone" =>$phone,
             "address" =>$address,
             "branch" => $branch,
+            "profile" => $profile,
             "branch_id" => $branch_id
 
         );

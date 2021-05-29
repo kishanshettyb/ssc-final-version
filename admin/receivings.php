@@ -93,7 +93,7 @@ error_reporting(0);
               aria-expanded="false">
               <div class="media align-items-center">
                 <span class="avatar avatar-sm rounded-circle">
-                  <img alt="Image placeholder" src="./assets/img/theme/team-4-800x800.jpg">
+                  <img alt="Image placeholder" src="./assets/img/profile-image/<?php echo $_SESSION["session_admin_profile"] ?>">
                 </span>
                 <div class="media-body ml-2 d-none d-lg-block">
                   <span class="mb-0 text-sm  font-weight-bold"><?php echo $_SESSION["session_admin_username"] ?></span>
@@ -298,7 +298,7 @@ error_reporting(0);
                 </div>
                 <div class="col-md-12">
                   <hr class="mb-2 mt-2">
-                  <h3 class="text-center">Recieving Details</h3>
+                  <h3 class="text-center">Receiver Details</h3>
                   <hr class="mb-2 mt-2">
 
                   <div class="row ">

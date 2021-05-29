@@ -37,7 +37,9 @@ function getBookings(url) {
 					return moment(data).format("DD/MM/YYYY h:mm:ss a");
 				},
 			},
-
+			{
+				data: "from_place",
+			},
 			{
 				data: "to_place",
 			},

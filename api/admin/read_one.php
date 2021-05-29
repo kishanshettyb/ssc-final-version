@@ -34,6 +34,7 @@
       "phone" => $admin->phone,
       "address" => $admin->address,
       "branch" => $admin->branch,
+      "profile" => $admin->profile,
       "branch_id" => $admin->branch_id,
 
     );
