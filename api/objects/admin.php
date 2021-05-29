@@ -62,7 +62,7 @@ session_start();
         $query = "INSERT INTO
                     " . $this->table_name . "
                 SET
-                    username=:username, password=:password, name=:name, email=:email, phone=:phone, address=:address, branch=:branch,profile=:profile,branch_id=:branch_id";
+                    username=:username, password=:password, name=:name, email=:email, phone=:phone, address=:address, branch=:branch, profile=:profile, branch_id=:branch_id";
 
         // prepare query
         $stmt = $this->conn->prepare($query);

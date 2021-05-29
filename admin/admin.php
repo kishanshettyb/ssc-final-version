@@ -205,6 +205,13 @@ error_reporting(0);
                   <input id="branch_id" name="branch_id" type="text" class="form-control branch_id"   placeholder="Enter branch oid">
                 </div>
               </div>
+               <div class="col-md-4 hide1">
+                <div class="form-group">
+                  <label>profile</label>
+                  <input name="profile" type="text" class="form-control profile" value="icon-new.png" placeholder="Enter profile">
+                </div>
+              </div>
+
               <div class="col-md-4">
                 <div class="form-group">
                   <label>Username</label>
@@ -237,7 +244,7 @@ error_reporting(0);
               <div class="col-md-4">
                 <div class="form-group">
                   <label>Phone</label>
-                  <input name="phone" type="text" class="form-control phone" placeholder="Enter phone">
+                  <input maxlength="10" name="phone" type="text" class="form-control phone" placeholder="Enter phone">
                 </div>
               </div>
               <div class="col-md-3">
@@ -307,7 +314,7 @@ error_reporting(0);
               <div class="col-md-4">
                 <div class="form-group">
                   <label>Branch Phone</label>
-                  <input name="branch_phone" type="text" class="form-control" placeholder="Enter Branch phone no">
+                  <input name="branch_phone" maxlength="10" type="text" class="form-control" placeholder="Enter Branch phone no">
                 </div>
               </div>
             </div>
