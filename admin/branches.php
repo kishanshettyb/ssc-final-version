@@ -141,6 +141,7 @@ error_reporting(0);
                     <th scope="col">Branch Name</th>
                     <th scope="col">Branch Code</th>
                     <th scope="col">Branch Phone</th>
+                    <th scope="col">Status</th>
                     <th scope="col">Actions</th>
                   </tr>
                 </thead>
@@ -192,6 +193,7 @@ error_reporting(0);
                   <input id="branch_id" name="branch_id" type="text" class="form-control " placeholder="Enter Branch id">
                 </div>
               </div>
+             
               <div class="col-md-4">
                 <div class="form-group">
                   <label>Branch Name</label>
@@ -208,6 +210,15 @@ error_reporting(0);
                 <div class="form-group">
                   <label>Branch Phone</label>
                   <input name="branch_phone" maxlength="10" type="text" class="form-control" placeholder="Enter Branch phone">
+                </div>
+              </div>
+               <div class="col-md-12">
+                <div class="form-group">
+                  <label>Branch Status</label>
+                  <select name="status" class="form-control status">
+                       <option value="active">Active</option>
+                       <option value="inactive">Inactive</option>
+                  </select>
                 </div>
               </div>
             </div>

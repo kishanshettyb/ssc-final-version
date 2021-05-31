@@ -24,6 +24,16 @@ function getBranches() {
 				data: "branch_phone",
 			},
 			{
+				data: "status",
+				className: "action-row-large",
+				render: function (data, type, row) {
+					if (data == "active") {
+						return "<b class='text-success'><i class='fa fa-check'></i> Active</b>";
+					}
+					return "<b class='text-danger'><i class='fa fa-times'></i> Inactive</b>";
+				},
+			},
+			{
 				data: "actions",
 				className: "action-row-large",
 				render: function (data, type, row) {
@@ -89,10 +99,11 @@ $(document).on("click", ".createBranch, .editBranch", function () {
 	}
 });
 $(document).on("click", ".deleteBranch", function () {
-	var url = "../api/branches/delete.php";
+	var url = "../api/branches/update_status.php";
 	var branch_id = $(this).closest("tr").find(".branch_id").text();
 	var data = {
 		branch_id: branch_id,
+		status: "inactive",
 	};
 	$.ajax({
 		url: url,

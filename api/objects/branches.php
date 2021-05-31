@@ -34,6 +34,20 @@
         return $stmt;
       }
 
+       // read productss
+      function readActive(){
+        // Select all Query
+        $query = "SELECT * FROM ".$this->table_name." WHERE status='active'  ORDER BY branch_name ASC ";
+
+        // prepare query statement
+        $stmt = $this->conn->prepare($query);
+
+        // execute Query
+        $stmt->execute();
+
+        return $stmt;
+      }
+
       function create(){
         $query = "SELECT  * FROM ".$this->table_name." WHERE branch_name=:branch_name";
         $stmt1 = $this->conn->prepare($query);
@@ -149,6 +163,42 @@
 
           return false;
       }
+
+
+      // update the product
+      function updateStatus(){
+
+          // update query
+          $query = "UPDATE
+                      " . $this->table_name . "
+                  SET
+                      status = :status
+                  WHERE
+                      branch_id = :branch_id";
+
+          // prepare query statement
+          $stmt = $this->conn->prepare($query);
+
+          // sanitize
+          $this->status=htmlspecialchars(strip_tags($this->status));
+          $this->branch_id=htmlspecialchars(strip_tags($this->branch_id));
+
+
+
+          // bind new values
+          $stmt->bindParam(':status', $this->status);
+          $stmt->bindParam(':branch_id', $this->branch_id);
+
+
+
+          // execute the query
+          if($stmt->execute()){
+              return true;
+          }
+
+          return false;
+      }
+
 
 
       function delete_branch(){
