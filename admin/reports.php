@@ -213,24 +213,19 @@ error_reporting(0);
               <table id="bookingTable" class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                    <th scope="col">Booking Id</th>
-                    <th scope="col">Admin Id</th>
                     <th scope="col">GC No</th>
-                    <th scope="col">Branch</th>
                     <th scope="col">Date</th>
+                    <th scope="col">From</th>
                     <th scope="col">To</th>
                     <th scope="col">No. Pack</th>
-                    <th scope="col">Weight</th>
-
                     <th scope="col">Basic freight</th>
+                    <th scope="col">Weight</th>
                     <th scope="col">Sub Total</th>
                     <th scope="col">GST</th>
                     <th scope="col">Delivery Charges</th>
                     <th scope="col">Total</th>
                     <th scope="col">Status</th>
                     <th scope="col">Payment Mode</th>
-
-
                     <th scope="col">Consignor Name & Address</th>
                     <th scope="col">Consignee Name & Address</th>
                   </tr>

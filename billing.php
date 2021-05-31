@@ -60,7 +60,7 @@ error_reporting(0);
                 <h4 class="mb-0 color-pink text-center">Sri Sai Cargo </h4>
                 <hr class="mt-2 mb-2">
                 <p class="mb-1 text-justify address_line text-center" style="line-height:1">
-                  <!-- Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, Bangalore - 560009.<br /> -->
+                  <!-- Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, BENGALURU - 560009.<br /> -->
                   Mobile No: +91 9449507037
                   <span class="pr-2" style="font-weight:600;float:right">
                     GSTIN: 29AKZPM2385H1ZB
@@ -205,7 +205,7 @@ error_reporting(0);
                 <h6>From:</h6>
               </div>
               <div class="col-md-10">
-                <input name="from_place" type="text" value="BANGALORE" class="form-control small-input">
+                <input name="from_place" type="text" value="BENGALURU" class="form-control small-input">
               </div>
             </div>
             <div class="row">

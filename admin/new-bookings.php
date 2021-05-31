@@ -172,7 +172,7 @@ error_reporting(0);
                                 <h2 class="billing-logo-text mb-0"><?php
                                 if($_SESSION["session_branch"] == MAINBRANCH){
                                  echo  "Sri Sai Cargo";
-                                }else  if($_SESSION["session_branch"] == "BANGALORE"){
+                                }else  if($_SESSION["session_branch"] == "BENGALURU"){
                                   echo  "Sri Sai Cargo";
                                 }else{
                                  echo  "Sri Sai Cargo";
@@ -186,7 +186,7 @@ error_reporting(0);
                               <?php
                               if($_SESSION["session_branch"] == MAINBRANCH){
                                 echo "Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, Bangalore - 560009.";
-                              }else if($_SESSION["session_branch"] == "BANGALORE"){
+                              }else if($_SESSION["session_branch"] == "BENGALURU"){
                                echo  "Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, Bangalore - 560009.";
                               }else {
                                 echo "Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, Bangalore - 560009.";
@@ -206,7 +206,7 @@ error_reporting(0);
                             <?php 
                              if($_SESSION["session_branch"] == MAINBRANCH){
                                echo "9449507037";
-                              }else if($_SESSION["session_branch"] == "BANGALORE"){
+                              }else if($_SESSION["session_branch"] == "BENGALURU"){
                                echo "GSTIN: 9449507037";
                              }else{
                               echo "9449507037";
@@ -217,7 +217,7 @@ error_reporting(0);
                             <?php 
                              if($_SESSION["session_branch"] == MAINBRANCH){
                                echo "GSTIN: 29AKZPM2385H1ZB";
-                              }else if($_SESSION["session_branch"] == "BANGALORE"){
+                              }else if($_SESSION["session_branch"] == "BENGALURU"){
                                echo "GSTIN: 29AKZPM2385H1ZB";
                              }else{
                               echo "GSTIN: 29AKZPM2385H1ZB";
@@ -327,7 +327,7 @@ error_reporting(0);
                           value="<?php 
                              if($_SESSION["session_branch"] == MAINBRANCH){
                                echo "SUBJECT TO BANGLORE JURISDICTION";
-                              }else if($_SESSION["session_branch"] == "BANGALORE"){
+                              }else if($_SESSION["session_branch"] == "BENGALURU"){
                                echo "SUBJECT TO BANGLORE JURISDICTION";
                              }else{
                               echo "SUBJECT TO BANGLORE JURISDICTION";

@@ -33,7 +33,7 @@ function getBookings() {
 	var branch_id = $(".branch-text").attr("data-branch-id");
 
 	var url;
-	if (branch == "BANGLORE") {
+	if (branch == "BENGALURU") {
 		url = "../api/bookings/read.php";
 		$(".branch-div").css("display", "block");
 		setTimeout(function () {
@@ -55,40 +55,31 @@ function getBookings() {
 		},
 		columns: [
 			{
-				data: "booking_id",
-				className: "booking_id hide",
-			},
-
-			{
-				data: "admin_id",
-				className: " admin_id hide",
-			},
-
-			{
 				data: "gc_no",
 				className: "gc_no",
 			},
-			{
-				data: "branch_name",
-			},
+
 			{
 				data: "date",
 				render: function (data, type, row) {
 					return moment(data).format("DD/MM/YYYY");
 				},
 			},
-
+			{
+				data: "from_place",
+			},
 			{
 				data: "to_place",
 			},
 			{
 				data: "no_of_packages",
 			},
-			{
-				data: "act_wt",
-			},
+
 			{
 				data: "basic_freight",
+			},
+			{
+				data: "act_wt",
 			},
 			{
 				data: "subtotal",

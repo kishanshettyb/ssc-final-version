@@ -174,7 +174,7 @@ error_reporting(0);
                     <p style="font-weight:900;font-size:10px;color:balck">Sri Sai Cargo</p>
 
                     <?php
-                                }else  if($_SESSION["session_branch"] == "BANGALORE"){
+                                }else  if($_SESSION["session_branch"] == "BENGALURU"){
                                   ?>
 
 
@@ -206,7 +206,7 @@ error_reporting(0);
                     </span>
                   </p>
                   <?php
-                                }else  if($_SESSION["session_branch"] == "BANGALORE"){
+                                }else  if($_SESSION["session_branch"] == "BENGALURU"){
                                   ?>
                   <p class="mt-4 text-justify address_line text-center" style="line-height:1">
                     Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic,
