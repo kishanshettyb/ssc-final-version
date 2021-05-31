@@ -138,7 +138,7 @@ session_start();
         // query to read single record
         $query = "SELECT * FROM " . $this->table_name . " 
         INNER JOIN branches ON branches.branch_id = admin.branch_id
-        WHERE username = ? AND password = ?  AND status='active' ";
+        WHERE username = ? AND password = ?  AND admin.status='active' ";
 
         // prepare query statement
         $stmt = $this->conn->prepare( $query );

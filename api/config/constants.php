@@ -1,2 +1,2 @@
 <?php
-define("MAINBRANCH","BANGLORE");
+define("MAINBRANCH","BENGALURU");
