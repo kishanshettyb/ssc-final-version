@@ -76,12 +76,12 @@ if(!isset($_SESSION["session_admin_username"]))
     </a>
     <div class="collapse" id="navbar-receivings">
       <ul class="nav nav-sm flex-column">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a href="./receivings-list" class="nav-link">
             <div class="menu-alphabet">R</div>
            Receivings List
           </a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a href="./receivings" class="nav-link">
             <div class="menu-alphabet">R</div>
@@ -145,13 +145,13 @@ if(!isset($_SESSION["session_admin_username"]))
     </a>
     <div class="collapse" id="navbar-receivings">
       <ul class="nav nav-sm flex-column">
-        
+<!--         
         <li class="nav-item">
           <a href="./receivings-list" class="nav-link">
             <div class="menu-alphabet">R</div>
            Receivings List
           </a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a href="./receivings" class="nav-link">
             <div class="menu-alphabet">R</div>
