@@ -33,6 +33,7 @@
             "branch_id"=>$branch_id,
             "branch_name"=>$branch_name,
             "branch_phone"=>$branch_phone,
+            "status"=>$status,
             "branch_code"=>$branch_code
 
         );

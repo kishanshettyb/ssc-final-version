@@ -24,6 +24,7 @@ $data = json_decode(file_get_contents("php://input"));
 $branches->branch_name = $data->branch_name;
 $branches->branch_code = $data->branch_code;
 $branches->branch_phone = $data->branch_phone;
+$branches->status = $data->status;
 
 // create the Branches
 if($branches->create()){

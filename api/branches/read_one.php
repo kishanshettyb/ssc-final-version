@@ -29,6 +29,7 @@
       "branch_id" =>  $branches->branch_id,
       "branch_name" => $branches->branch_name,
       "branch_code" => $branches->branch_code,
+      "status" => $branches->status,
       "branch_phone" => $branches->branch_phone
     );
 

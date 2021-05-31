@@ -24,13 +24,10 @@ $data = json_decode(file_get_contents("php://input"));
 $branches->branch_id = $data->branch_id;
 
 // set branches property values
-$branches->branch_name = $data->branch_name;
-$branches->branch_code = $data->branch_code;
 $branches->status = $data->status;
-$branches->branch_phone = $data->branch_phone;
 
 // update the branches
-if($branches->update()){
+if($branches->updateStatus()){
     echo '{';
         echo '"message": "branches was updated."';
     echo '}';

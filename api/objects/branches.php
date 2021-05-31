@@ -10,6 +10,7 @@
       public $branch_id;
       public $branch_name;
       public $branch_code;
+      public $status;
       public $branch_phone;
 
 
@@ -54,7 +55,7 @@
         $query = "INSERT INTO
                     " . $this->table_name . "
                 SET
-                    branch_name=:branch_name, branch_code=:branch_code, branch_phone=:branch_phone";
+                    branch_name=:branch_name, branch_code=:branch_code,status=:status, branch_phone=:branch_phone";
 
         // prepare query
         $stmt = $this->conn->prepare($query);
@@ -63,12 +64,14 @@
         $this->branch_name=htmlspecialchars(strip_tags($this->branch_name));
         $this->branch_code=htmlspecialchars(strip_tags($this->branch_code));
         $this->branch_phone=htmlspecialchars(strip_tags($this->branch_phone));
+        $this->status=htmlspecialchars(strip_tags($this->status));
 
 
         // bind values
         $stmt->bindParam(":branch_name", $this->branch_name);
         $stmt->bindParam(":branch_code", $this->branch_code);
         $stmt->bindParam(":branch_phone", $this->branch_phone);
+        $stmt->bindParam(":status", $this->status);
 
 
         // execute query
@@ -100,6 +103,7 @@
         $this->branch_name = $row['branch_name'];
         $this->branch_code = $row['branch_code'];
         $this->branch_phone = $row['branch_phone'];
+        $this->status = $row['status'];
 
       }
 
@@ -112,6 +116,7 @@
                   SET
                       branch_name = :branch_name,
                       branch_code = :branch_code,
+                      status = :status,
                       branch_phone = :branch_phone
                   WHERE
                       branch_id = :branch_id";
@@ -123,6 +128,7 @@
           $this->branch_name=htmlspecialchars(strip_tags($this->branch_name));
           $this->branch_code=htmlspecialchars(strip_tags($this->branch_code));
           $this->branch_phone=htmlspecialchars(strip_tags($this->branch_phone));
+          $this->status=htmlspecialchars(strip_tags($this->status));
           $this->branch_id=htmlspecialchars(strip_tags($this->branch_id));
 
 
@@ -131,6 +137,7 @@
           $stmt->bindParam(':branch_name', $this->branch_name);
           $stmt->bindParam(':branch_code', $this->branch_code);
           $stmt->bindParam(':branch_phone', $this->branch_phone);
+          $stmt->bindParam(':status', $this->status);
           $stmt->bindParam(':branch_id', $this->branch_id);
 
 
