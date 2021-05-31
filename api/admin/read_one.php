@@ -35,6 +35,7 @@
       "address" => $admin->address,
       "branch" => $admin->branch,
       "profile" => $admin->profile,
+      "status" => $admin->status,
       "branch_id" => $admin->branch_id,
 
     );

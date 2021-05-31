@@ -28,6 +28,16 @@ function getAdmins() {
 				data: "username",
 			},
 			{
+				data: "status",
+				className: "action-row-large",
+				render: function (data, type, row) {
+					if (data == "active") {
+						return "<b class='text-success'><i class='fa fa-check'></i> Active</b>";
+					}
+					return "<b class='text-danger'><i class='fa fa-times'></i> Inactive</b>";
+				},
+			},
+			{
 				data: "actions",
 				className: "action-row-large",
 				render: function (data, type, row) {
@@ -178,10 +188,11 @@ $(document).on("click", ".createAdmin, .editAdmin", function () {
 });
 
 $(document).on("click", ".deleteAdmin", function () {
-	var url = "../api/admin/delete.php";
+	var url = "../api/admin/update_status.php";
 	var admin_id = $(this).closest("tr").find(".admin_id").text();
 	var data = {
 		admin_id: admin_id,
+		status: "inactive",
 	};
 	$.ajax({
 		url: url,
@@ -248,6 +259,7 @@ $("#adminForm").on("submit", function (e) {
 		address: $("#adminForm").find(".address").val(),
 		branch: $("#branches :selected").text(),
 		profile: $("#adminForm").find(".profile").val(),
+		status: $("#adminForm").find(".status").val(),
 
 		branch_id: $("#branches :selected").attr("data-branch-id"),
 	};

@@ -39,6 +39,7 @@
             "address" =>$address,
             "branch" => $branch,
             "profile" => $profile,
+            "status" => $status,
             "branch_id" => $branch_id
 
         );

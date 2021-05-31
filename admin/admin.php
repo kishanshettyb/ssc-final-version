@@ -148,6 +148,7 @@ error_reporting(0);
                     <th scope="col">Phone</th>
                     <th scope="col">Email</th>
                     <th scope="col">Username</th>
+                    <th scope="col">status</th>
                     <th scope="col">Actions</th>
                   </tr>
                 </thead>
@@ -205,10 +206,19 @@ error_reporting(0);
                   <input id="branch_id" name="branch_id" type="text" class="form-control branch_id"   placeholder="Enter branch oid">
                 </div>
               </div>
-               <div class="col-md-4 hide1">
+               <div class="col-md-4 hide">
                 <div class="form-group">
                   <label>profile</label>
                   <input name="profile" type="text" class="form-control profile" value="icon-new.png" placeholder="Enter profile">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Staus</label>
+                     <select name="status" class="form-control status">
+                       <option value="active">Active</option>
+                       <option value="inactive">Inactive</option>
+                  </select>
                 </div>
               </div>
 

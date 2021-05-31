@@ -24,20 +24,11 @@ $data = json_decode(file_get_contents("php://input"));
 $admin->admin_id = $data->admin_id;
 
 // set admin property values
-$admin->username = $data->username;
-$admin->password = $data->password;
-$admin->name = $data->name;
-$admin->email = $data->email;
-$admin->phone = $data->phone;
-$admin->address = $data->address;
-$admin->branch = $data->branch;
-$admin->profile = $data->profile;
-$admin->status = $data->status;
-$admin->branch_id = $data->branch_id;
+$admin->status = $data->status; 
 
 
 // update the admin
-if($admin->update()){
+if($admin->updateStatus()){
     echo '{';
         echo '"message": "admin was updated."';
     echo '}';

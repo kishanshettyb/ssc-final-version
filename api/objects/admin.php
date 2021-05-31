@@ -17,6 +17,7 @@ session_start();
       public $address;
       public $branch;
       public $profile;
+      public $status;
       public $branch_id;
       // constructor with $db as database connection
       public function __construct($db)
@@ -30,7 +31,7 @@ session_start();
         $query = "SELECT
                   *
                   FROM
-                  ".$this->table_name."  ";
+                  ".$this->table_name."    ";
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
@@ -62,7 +63,7 @@ session_start();
         $query = "INSERT INTO
                     " . $this->table_name . "
                 SET
-                    username=:username, password=:password, name=:name, email=:email, phone=:phone, address=:address, branch=:branch, profile=:profile, branch_id=:branch_id";
+                    username=:username, password=:password, name=:name, email=:email, phone=:phone, address=:address, branch=:branch, profile=:profile, status=:status,branch_id=:branch_id";
 
         // prepare query
         $stmt = $this->conn->prepare($query);
@@ -76,6 +77,7 @@ session_start();
         $this->address=htmlspecialchars(strip_tags($this->address));
         $this->branch=htmlspecialchars(strip_tags($this->branch));
         $this->profile=htmlspecialchars(strip_tags($this->profile));
+        $this->status=htmlspecialchars(strip_tags($this->status));
         $this->branch_id=htmlspecialchars(strip_tags($this->branch_id));
 
 
@@ -85,9 +87,10 @@ session_start();
         $stmt->bindParam(":name", $this->name);
         $stmt->bindParam(":email", $this->email);
         $stmt->bindParam(":phone", $this->phone);
-        $stmt->bindParam(":address", $this->address);
+        $stmt->bindParam(":address", $this->address); 
         $stmt->bindParam(":branch", $this->branch);
         $stmt->bindParam(":profile", $this->profile);
+        $stmt->bindParam(":status", $this->status);
         $stmt->bindParam(":branch_id", $this->branch_id);
 
 
@@ -125,6 +128,7 @@ session_start();
         $this->address = $row['address'];
         $this->branch = $row['branch'];
         $this->profile = $row['profile'];
+        $this->status = $row['status'];
         $this->branch_id = $row['branch_id'];
 
       }
@@ -134,7 +138,7 @@ session_start();
         // query to read single record
         $query = "SELECT * FROM " . $this->table_name . " 
         INNER JOIN branches ON branches.branch_id = admin.branch_id
-        WHERE username = ? AND password = ?  ";
+        WHERE username = ? AND password = ?  AND status='active' ";
 
         // prepare query statement
         $stmt = $this->conn->prepare( $query );
@@ -159,6 +163,7 @@ session_start();
         $this->address = $row['address'];
         $this->branch = $row['branch_name'];
         $this->profile = $row['profile'];
+        $this->status = $row['status'];
         $this->branch_id = $row['branch_id'];
         $this->branch_name = $row['branch_name'];
 
@@ -198,6 +203,7 @@ session_start();
                       address = :address,
                       branch = :branch,
                       profile = :profile,
+                      status = :status,
                       branch_id = :branch_id
 
                   WHERE
@@ -215,6 +221,7 @@ session_start();
           $this->address=htmlspecialchars(strip_tags($this->address));
           $this->branch=htmlspecialchars(strip_tags($this->branch));
           $this->profile=htmlspecialchars(strip_tags($this->profile));
+          $this->status=htmlspecialchars(strip_tags($this->status));
           $this->branch_id=htmlspecialchars(strip_tags($this->branch_id));
 
           $this->admin_id=htmlspecialchars(strip_tags($this->admin_id));
@@ -228,8 +235,40 @@ session_start();
           $stmt->bindParam(':address', $this->address);
           $stmt->bindParam(':branch', $this->branch);
           $stmt->bindParam(':profile', $this->profile);
+          $stmt->bindParam(':status', $this->status);
           $stmt->bindParam(':branch_id', $this->branch_id);
 
+          $stmt->bindParam(':admin_id', $this->admin_id);
+
+          // execute the query
+          if($stmt->execute()){
+              return true;
+          }
+
+          return false;
+      }
+
+      // update the product
+      function updateStatus(){
+
+          // update query
+          $query = "UPDATE
+                      " . $this->table_name . "
+                  SET
+                      status = :status  
+                  WHERE
+                      admin_id = :admin_id";
+
+          // prepare query statement
+          $stmt = $this->conn->prepare($query);
+
+          // sanitize
+          $this->status=htmlspecialchars(strip_tags($this->status));
+          $this->admin_id=htmlspecialchars(strip_tags($this->admin_id));
+
+          // bind new values
+        
+          $stmt->bindParam(':status', $this->status);
           $stmt->bindParam(':admin_id', $this->admin_id);
 
           // execute the query

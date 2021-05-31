@@ -29,6 +29,7 @@ $admin->phone = $data->phone;
 $admin->address = $data->address;
 $admin->branch = $data->branch;
 $admin->profile = $data->profile;
+$admin->status = $data->status;
 $admin->branch_id = $data->branch_id;
 
 
