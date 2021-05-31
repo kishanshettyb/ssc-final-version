@@ -74,12 +74,29 @@ function getBookings() {
 			{
 				data: "no_of_packages",
 			},
-
+			{
+				data: "act_wt",
+			},
 			{
 				data: "basic_freight",
 			},
 			{
-				data: "act_wt",
+				data: "hamali",
+			},
+			{
+				data: "stat_charges",
+			},
+			{
+				data: "value_of_sc",
+			},
+			{
+				data: "transhipment",
+			},
+			{
+				data: "c_charges",
+			},
+			{
+				data: "with_pass",
 			},
 			{
 				data: "subtotal",

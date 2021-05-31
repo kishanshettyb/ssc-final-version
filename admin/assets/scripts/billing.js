@@ -219,10 +219,12 @@ $(document).ready(function () {
 
 	$(
 		"#aoc, #with_pass, #stat_charges, #basic_freight, #transhipment, #c_charges, #d_charges,#value_of_sc"
-	).change(function () {
+	).keyup(function () {
 		var $this = $(this);
-		$this.val(parseFloat($this.val()).toFixed(2));
 		calculateTotal();
+		setTimeout(function () {
+			$this.val(parseFloat($this.val()).toFixed(2));
+		}, 2000);
 	});
 
 	//new changes

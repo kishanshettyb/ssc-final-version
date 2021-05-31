@@ -209,7 +209,7 @@ error_reporting(0);
               <div class="col-md-4">
                 <div class="form-group">
                   <label>Branch Phone</label>
-                  <input name="branch_phone" maxlength="10" type="text" class="form-control" placeholder="Enter Branch phone">
+                  <input name="branch_phone" maxlength="20" type="text" class="form-control" placeholder="Enter Branch phone">
                 </div>
               </div>
                <div class="col-md-12">

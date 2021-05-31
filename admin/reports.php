@@ -218,8 +218,14 @@ error_reporting(0);
                     <th scope="col">From</th>
                     <th scope="col">To</th>
                     <th scope="col">No. Pack</th>
-                    <th scope="col">Basic freight</th>
                     <th scope="col">Weight</th>
+                    <th scope="col">Basic freight</th>
+                    <th scope="col">Hamali</th>
+                    <th scope="col">Stat.</th>
+                    <th scope="col">Value SC</th>
+                    <th scope="col">Transhipment</th>
+                    <th scope="col">C Charges</th>
+                    <th scope="col">With Pass</th>
                     <th scope="col">Sub Total</th>
                     <th scope="col">GST</th>
                     <th scope="col">Delivery Charges</th>
