@@ -724,6 +724,39 @@
         return false;
     }
 
+     // update the product
+      function updateDeleteStatus(){
+
+        // update query
+        $query = "UPDATE
+                    " . $this->table_name . "
+                SET
+                     status= :status,
+                     total= :total
+                WHERE
+                    booking_id = :booking_id";
+
+        // prepare query statement
+        $stmt = $this->conn->prepare($query);
+      
+        $this->status=htmlspecialchars(strip_tags($this->status));
+        $this->total=htmlspecialchars(strip_tags($this->total));
+        $this->booking_id=htmlspecialchars(strip_tags($this->booking_id));
+
+        // bind new values
+        
+        $stmt->bindParam(':status', $this->status);
+        $stmt->bindParam(':total', $this->total);
+        $stmt->bindParam(':booking_id', $this->booking_id);
+
+        // execute the query
+        if($stmt->execute()){
+            return true;
+        }
+
+        return false;
+    }
+
       // search products
       function search($keywords){
 
