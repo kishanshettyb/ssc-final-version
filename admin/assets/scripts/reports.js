@@ -62,7 +62,7 @@ function getBookings() {
 			{
 				data: "date",
 				render: function (data, type, row) {
-					return moment(data).format("DD/MM/YYYY");
+					return moment(data).format("DD/MM/YYYY h:mm:ss a");
 				},
 			},
 			{
@@ -263,28 +263,18 @@ $("#filterForm").on("submit", function (e) {
 						},
 						columns: [
 							{
-								data: "booking_id",
-								className: "booking_id hide",
-							},
-							{
-								data: "admin_id",
-								className: " admin_id hide",
-							},
-							{
 								data: "gc_no",
-								className: " gc_no hide",
+								className: "gc_no",
 							},
-							{
-								data: "branch_name",
-							},
+
 							{
 								data: "date",
 								render: function (data, type, row) {
-									return moment(data).format("DD/MM/YYYY  h:mm:ss a");
+									return moment(data).format("DD/MM/YYYY h:mm:ss a");
 								},
 							},
 							{
-								data: "gc_no",
+								data: "from_place",
 							},
 							{
 								data: "to_place",
@@ -299,7 +289,39 @@ $("#filterForm").on("submit", function (e) {
 								data: "basic_freight",
 							},
 							{
+								data: "hamali",
+							},
+							{
+								data: "stat_charges",
+							},
+							{
+								data: "value_of_sc",
+							},
+							{
+								data: "transhipment",
+							},
+							{
+								data: "c_charges",
+							},
+							{
+								data: "with_pass",
+							},
+							{
+								data: "subtotal",
+							},
+							{
 								data: "gst",
+							},
+							{
+								data: "delivery_charges",
+								className: "action-row-large",
+								render: function (data, type, row) {
+									if (data === null) {
+										return "<td>-</td>";
+									} else {
+										return "<td><b>" + data + "</b></td>";
+									}
+								},
 							},
 							{
 								data: "total",
@@ -323,13 +345,6 @@ $("#filterForm").on("submit", function (e) {
 							},
 							{
 								data: "consignee_name_add",
-							},
-							{
-								data: "actions",
-								className: "action-row-large",
-								render: function (data, type, row) {
-									return '<a class="btn btn-success btn-sm editBooking" href="#" role="button">Edit Booking</a><a class="btn btn-danger btn-sm edit_printBooking"  href="#"  role="button">Edit & Print Booking</a>';
-								},
 							},
 						],
 						dom: "Blfrtip",
