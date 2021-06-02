@@ -78,6 +78,8 @@ function getBookings(url) {
 				className: "action-row-large",
 				render: function (data, type, row) {
 					if (data == "booked") {
+						return '<td><b  class="text-primary">' + data + "</b></td>";
+					} else if (data == "deleted") {
 						return '<td><b  class="text-danger">' + data + "</b></td>";
 					} else {
 						return '<td><b  class="text-success">' + data + "</b></td>";
@@ -98,7 +100,7 @@ function getBookings(url) {
 					if (data == "delivered") {
 						return "";
 					} else {
-						return '<a class="btn btn-success btn-sm editBooking" href="#" role="button">Edit Booking</a><a class="btn btn-danger btn-sm edit_printBooking"  href="#"  role="button">Edit & Print Booking</a>';
+						return '<a class="btn btn-danger btn-sm deleteBooking" href="#" role="button">Delete Booking</a><a class="btn btn-success btn-sm editBooking" href="#" role="button">Edit Booking</a><a class="btn btn-primary btn-sm edit_printBooking"  href="#"  role="button">Edit & Print Booking</a>';
 					}
 				},
 			},
@@ -149,6 +151,47 @@ $(document).on("click", ".editBooking", function () {
 		$(this).closest("tr").find(".booking_id").text();
 	var formName = "bookingForm";
 	ajaxGetRequest(url, formName);
+});
+
+$(document).on("click", ".deleteBooking", function () {
+	swal({
+		title: "Are you sure?",
+		text: "Once deleted, you will not be able to recover this booking!",
+		icon: "warning",
+		buttons: true,
+		buttons: ["Cancel", "Ok Delete"],
+		dangerMode: true,
+	}).then((willDelete) => {
+		if (willDelete) {
+			var url = "../api/bookings/update_delete_status.php";
+			var booking_id = $(this).closest("tr").find(".booking_id").text();
+			var data = {
+				booking_id: booking_id,
+				status: "deleted",
+				total: "00",
+			};
+			$.ajax({
+				url: url,
+				type: "POST",
+				dataType: "json",
+				data: JSON.stringify(data),
+				contentType: "application/json; charset=utf-8",
+				success: function (data) {
+					swal({
+						title: "Success",
+						text: "bookings deleted successfully.",
+						icon: "success",
+					});
+					getBookings();
+				},
+				error: function (xhr, textStatus, errorThrown) {
+					swal("Oops...", "Something went wrong!", "error");
+				},
+			});
+		} else {
+			swal("Your booking is safe!");
+		}
+	});
 });
 
 $("#bookingForm").on("submit", function (e) {
