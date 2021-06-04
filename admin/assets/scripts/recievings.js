@@ -34,9 +34,9 @@ var output =
 var from = output;
 var milliseconds = moment(from, "YYYY-MM-DD").format("DD-MM-YYYY");
 var f = new Date(milliseconds);
-
-$(".currentDate").val(output);
-$(".currentDate").text(milliseconds);
+console.log(output)
+$(".currentDateToday").val(output);
+$(".currentDateToday").text(milliseconds);
 // get Policy
 function getPolicy() {
 	$.ajax({

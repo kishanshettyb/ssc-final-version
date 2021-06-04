@@ -164,14 +164,14 @@ error_reporting(0);
         <div class="row">
           <div class="col-md-6">
             <div class="card recievings-bill-card p-2  section-1">
-              <div class="row mb-4">
+              <div class="row mb-1">
                 <div class="col-md-3 text-center">
                   <a href="./index">
                     <?php
                                 if($_SESSION["session_branch"] == MAINBRANCH){
                                  ?>
-                    <img src="./assets/img/brand/icon.png" style="height:50px;margin-top:30px" alt="">
-                    <p style="font-weight:900;font-size:10px;color:balck">Sri Sai Cargo</p>
+                    <img src="./assets/img/brand/icon.png" style="height:50px;" alt="">
+                    <p class="mb-0" style="font-weight:900;font-size:16px;color:balck">Sri Sai Cargo</p>
 
                     <?php
                                 }else  if($_SESSION["session_branch"] == "BENGALURU"){
@@ -195,7 +195,7 @@ error_reporting(0);
                   <?php
                                 if($_SESSION["session_branch"] == MAINBRANCH){
                                  ?>
-                  <p class="mt-4 text-justify address_line text-center" style="line-height:1">
+                  <p class="mt-1 mb-1 text-justify address_line text-center" style="line-height:1;font-size:12px">
                     Shop No. 7, SSBM Complex, Tank Bund Road, Next to Upparpet Police Station, Majestic, Bangalore - 560009.
                   </p>
                   <hr class="mb-1 mt-0">
@@ -249,7 +249,7 @@ error_reporting(0);
                   <h2 class="mt-0 mb-0">Delivey Receipt</h2>
                 </div>
                 <div class="col-md-4 text-right">
-                  <h5 class="mt-1 mb-0 mr-4">Date: <span class="currentDate"></span></h5>
+                  <h5 class="mt-1 mb-0 mr-4">Date: <span class="currentDateToday"></span></h5>
                 </div>
                 <div class="col-md-12">
                   <hr class="mt-0 mb-2">
