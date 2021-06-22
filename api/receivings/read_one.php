@@ -30,6 +30,7 @@
       "receiving_name" => $product->receiving_name,
       "receiving_phone" => $product->receiving_phone,
       "booking_id" => $product->booking_id,
+      "total" => $product->total,
       "delivery_charges" => $product->delivery_charges,
       "receiving_date_time" => $product->receiving_date_time
     );
