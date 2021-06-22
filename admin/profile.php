@@ -276,6 +276,8 @@ error_reporting(0);
                     placeholder="Enter Admin id">
                                          <input id="profile" name="profile" type="text" class="form-control "
                     placeholder=" ">
+                    <input   name="status" type="text" class="form-control "
+                    placeholder=" ">
                 </div>
               </div>
               <div class="col-md-4">
