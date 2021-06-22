@@ -71,8 +71,10 @@
       function readOne(){
 
         // query to read single record
-        $query = "SELECT * FROM
-                  " . $this->table_name . "   WHERE booking_id = ? ";
+        $query = "SELECT receivings.*, bookings.total FROM
+                  " . $this->table_name . " 
+                   INNER JOIN bookings ON bookings.booking_id = receivings.booking_id
+                   WHERE receivings.booking_id = ? ";
 
         // prepare query statement
         $stmt = $this->conn->prepare( $query );
@@ -90,6 +92,7 @@
         $this->receiving_name = $row['receiving_name'];
         $this->receiving_phone = $row['receiving_phone'];
         $this->booking_id = $row['booking_id'];
+        $this->total = $row['total'];
         $this->delivery_charges = $row['delivery_charges'];
         $this->receiving_date_time = $row['receiving_date_time'];
       }
