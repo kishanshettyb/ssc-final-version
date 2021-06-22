@@ -519,8 +519,10 @@ function getDeliveryInfo(booking_id) {
 				.val(data.receiving_date_time);
 			$(document)
 				.find(".receivingsTable .delivery_charges")
-				.val(data.delivery_charges);
-
+				.val(parseInt(data.delivery_charges).toFixed(2));
+				$(document)
+				.find(".receivingsTable .topay_charges")
+				.val(parseInt(data.total-data.delivery_charges).toFixed(2));
 			$(document).find("#printThis .receiver_name").val(data.receiving_name);
 			$(document).find("#printThis .receiver_phone").val(data.receiving_phone);
 			$(document)

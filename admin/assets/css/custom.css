@@ -325,10 +325,13 @@
   font-size: 18px;
 
 }
-.r
-feceivingsForm h3{
+.receivingsForm h3{
   font-size: 18px;
 }
 .receivingsForm .default-ul li{
   font-size: 13px;
+}
+.recievings-bill-card .default-ul{
+  border: 1px solid #ddd;
+  padding: 0 5px;
 }

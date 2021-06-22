@@ -246,13 +246,12 @@ error_reporting(0);
 
                 </div>
                 <div class="col-md-8 text-center">
-                  <h2 class="mt-0 mb-0">Delivey Receipt</h2>
+                  <h2 class="mt-0 mb-0">Delivery Receipt</h2>
                 </div>
                 <div class="col-md-4 text-right">
                   <h5 class="mt-1 mb-0 mr-4">Date: <span class="currentDateToday"></span></h5>
                 </div>
                 <div class="col-md-12">
-                  <hr class="mt-0 mb-2">
                   <form id="recievings-bill-card-form" class="display_table">
                     <div class="row">
                       <div class="col-md-6">
@@ -297,9 +296,7 @@ error_reporting(0);
 
                 </div>
                 <div class="col-md-12">
-                  <hr class="mb-2 mt-2">
-                  <h3 class="text-center">Receiver Details</h3>
-                  <hr class="mb-2 mt-2">
+                  <h3 class="text-center mt-4">Receiver Details</h3>
 
                   <div class="row ">
                     <div class="col-md-6  display_table receivingsTable">
@@ -315,24 +312,23 @@ error_reporting(0);
                         <li>Received On:</li>
                         <li><input type="text" class="form-control receiver_time"></li>
                       </ul>
-                      <ul class="default-ul">
-                        <li>Reciever Signature</li>
-                        <li> </li>
-                      </ul>
+                      <p class="pt-1 pb-1 mb-0" style="font-size:14px">Reciever Signature:</p>
                     </div>
                     <div class="col-md-6  display_table receivingsTable">
+                    <ul class="default-ul">
+                        <li>Topay:</li>
+                        <li><input type="text" class="form-control topay_charges"></li>
+                      </ul>
+                      
                       <ul class="default-ul">
                         <li>Delivery Charges:</li>
                         <li><input type="text" class="form-control delivery_charges"></li>
                       </ul>
-                      <ul class="default-ul">
-                        <li>Receiver Name:</li>
-                        <li><input type="text" class="form-control receiver_name"></li>
-                      </ul>
+                      
 
                       <ul class="default-ul">
-                        <li class="paid-hide">Total:</li>
-                        <li><span class="total-charges paid-hide"></span></li>
+                        <li class="paid-hide" style="color:#5e72e4;font-weight:bold;font-size:14px">Total:</li>
+                        <li><span class="total-charges paid-hide" style="color:#5e72e4;font-weight:bold;font-size:14px"></span></li>
                       </ul>
                     </div>
                   </div>
@@ -353,11 +349,12 @@ error_reporting(0);
                           <li><input type="text" class="form-control receiving_phone" maxlengli="10"
                               name="receiving_phone">
                           </li>
-                          <ul class="default-ul">
-                            <li>Reciever Signature</li>
+                         
+                        </ul>
+                        <ul class="default-ul">
+                            <li>Reciever Signature:</li>
                             <li> </li>
                           </ul>
-                        </ul>
                       </div>
                       <div class="col-md-6">
                         <ul class="default-ul">
