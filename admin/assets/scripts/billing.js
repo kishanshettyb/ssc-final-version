@@ -223,7 +223,10 @@ $(document).ready(function () {
 		var $this = $(this);
 		calculateTotal();
 		setTimeout(function () {
-			$this.val(parseFloat($this.val()).toFixed(2));
+			// if (isNaN(parseFloat($(this).val()))) {
+			// 	console.log("1");
+			// }
+			$(this).val(parseFloat($(this).val()).toFixed(2));
 		}, 2000);
 	});
 
